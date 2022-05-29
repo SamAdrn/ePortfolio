@@ -193,7 +193,7 @@ section {
 
 /* Education Section */
 .school-div {
-  padding: 8%;
+  padding: 5%;
   margin-bottom: 5%;
 }
 
@@ -354,6 +354,10 @@ section {
 
   .school-name-h3 {
     font-size: 2rem;
+  }
+
+  .school-div {
+    padding: 8%;
   }
 
   .experiences-title-div {
