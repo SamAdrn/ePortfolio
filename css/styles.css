@@ -234,11 +234,11 @@ section {
 
 /* Projects Section */
 .projects-card-grp {
-  padding: 8%;
+  padding: 3%;
 }
 
 .project-div {
-  padding: 2%;
+  padding: 1%;
 }
 
 .card-body {
@@ -371,6 +371,10 @@ section {
 
   .project-div {
     padding-bottom: 4%;
+  }
+
+  .projects-card-grp {
+    padding: 8%;
   }
 
   .project-title {
