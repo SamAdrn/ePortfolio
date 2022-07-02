@@ -2,6 +2,7 @@ body {
   background-color: #222831;
   color: #FFFFFF;
   font-family: 'Lato', sans-serif;
+  width: 100vw;
 }
 
 h1 {
@@ -234,6 +235,7 @@ section {
 
 /* Projects Section */
 .projects-card-grp {
+  width: 100vw;
   padding: 3%;
 }
 
