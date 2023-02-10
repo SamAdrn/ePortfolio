@@ -1,0 +1,449 @@
+body {
+  background-color: #222831;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 4rem;
+  padding-top: 10%;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  padding-bottom: 7%;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  padding-top: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+pre {
+  margin: 0;
+  line-height: 2;
+  font-size: 1.1rem;
+}
+
+hr {
+  border: 20px dotted #393E46;
+  border-style: none none dotted;
+}
+
+section {
+  padding-top: 5%;
+}
+
+.outer-div {
+  padding-right: 20%;
+  margin-right: 100%;
+}
+
+.container-fluid {
+  padding: 2% 7% 7%;
+  margin: 0;
+}
+
+.social-icon {
+  margin: 7%;
+  font-size: 200%;
+  color: #FFFFFF;
+}
+
+.social-icon:hover {
+  color: #FD7014;
+}
+
+.blockquote {
+  border-left: .25rem solid #FD7014;
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.link {
+  color: #FFFFFF;
+}
+
+.link:hover {
+  color: #FD7014;
+}
+
+.sub-p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.less-focus-text {
+  color: #8F97A3;
+}
+
+.card:hover {
+  filter: drop-shadow(0 1rem 2rem black);
+}
+
+.lighter-background {
+  background-color: #393E46;
+}
+
+.lighter-text {
+  color: #C2C2C2;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.bigger-bold-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 2% 7% 2%;
+  background-color: #222831;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: grey;
+}
+
+.nav-item {
+  padding: 0 5px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-talk-btn {
+  font-size: 1rem;
+  padding: 8px 20px;
+}
+
+.nav-talk-btn:hover {
+  color: #EEEEEE;
+  background-color: #FD7014;
+  border-color: #FD7014;
+}
+
+/* Title Section */
+#title {
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 10%;
+}
+
+.title-image {
+  width: 60%;
+  border-radius: 100%;
+  filter: drop-shadow(0 1rem 2rem black);
+}
+
+.title-p {
+  margin: 20px 0 40px;
+  font-size: 1.5rem;
+}
+
+/* About Section */
+.about-div {
+  padding: 3%;
+}
+
+.skills-p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.skills-container {
+  padding: 8px;
+  width: 100%;
+  background-color: #393E46;
+}
+
+.java {
+  background-color: #FD7014;
+  width: 80%;
+}
+
+.webdev {
+  background-color: #EEEEEE;
+  width: 60%;
+}
+
+.c {
+  background-color: #FD7014;
+  width: 50%;
+}
+
+/* Education Section */
+.school-div {
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.school-name-h3 {
+  font-weight: bold;
+}
+
+.cur-attending {
+  border-color: #FD7014;
+  border-width: thick;
+}
+
+.not-attending {
+  background-color: #222831;
+  border-width: thick;
+}
+
+/* Experiences Section */
+.experience-div {
+  padding-top: 10px;
+}
+
+.experiences-title-div {
+  text-align: right;
+  padding-right: 30px;
+  margin-top: 2%;
+}
+
+.experiences-desc-div {
+  border-left: 5px solid #FD7014;
+  margin-top: 2%;
+}
+
+.experiences-list-item {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+/* Projects Section */
+.projects-card-grp {
+  width: 100vw;
+  padding: 3%;
+}
+
+.project-div {
+  padding: 1%;
+}
+
+.card-body {
+  padding-bottom: 0;
+}
+
+.project-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-top: 10%;
+}
+
+.carousel-indicators {
+  margin: -15px;
+  height: 0;
+}
+
+.social-icon-proj {
+  margin-left: 1%;
+}
+
+.carousel-img {
+  /* Image Ratio: 1.3 */
+  height: auto;
+  max-width: 100%;
+}
+
+/* Contact Section */
+.contact-div {
+  padding-top: 15%;
+  padding-bottom: 20%;
+}
+
+.contact-h4 {
+  padding-top: 5%;
+}
+
+.contact-btn {
+  font-size: 2rem;
+  margin-top: 30px;
+  padding: 8px 20px;
+}
+
+.contact-btn:hover {
+  color: #EEEEEE;
+  background-color: #FD7014;
+  border-color: #FD7014;
+}
+
+.socials-h4 {
+  padding-top: 30%;
+  padding-bottom: 7%;
+}
+
+/* Footer */
+#footer {
+  background-color: #393E46;
+  padding-top: 5%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1028px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  pre {
+    font-size: 0.8rem;
+    padding-bottom: 1%;
+  }
+
+  hr {
+    border: 10px dotted #393E46;
+    border-style: none none dotted;
+  }
+
+  .bigger-bold-text {
+    font-size: 1rem;
+  }
+
+  .sub-p {
+    font-size: 0.8rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-talk-btn {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .title-image {
+    margin-top: 30%;
+  }
+
+  .title-p {
+    font-size: 1rem;
+  }
+
+  .school-name-h3 {
+    font-size: 2rem;
+  }
+
+  .school-div {
+    padding: 8%;
+  }
+
+  .experiences-title-div {
+    text-align: left;
+    margin-top: 10%;
+  }
+
+  .experiences-list-item {
+    font-size: 1rem;
+  }
+
+  .project-div {
+    padding-bottom: 4%;
+  }
+
+  .projects-card-grp {
+    padding: 8%;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-div, .footer-p {
+    text-align: center;
+  }
+
+  .contact-h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-h4 {
+    font-size: 1.2rem;
+  }
+
+  .contact-btn {
+    font-size: 1rem;
+  }
+
+  .socials-h4 {
+    font-size: 1.5rem;
+  }
+
+  .footer-p {
+    font-size: 0.5rem;
+  }
+}
+
+/* Animations */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  color: #EEEEEE;
+  background-color: #FD7014;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.float-up-animation {
+  transition: transform 450ms;
+}
+
+.float-up-animation:hover {
+  color: #FD7014;
+  transition: transform 125ms;
+  transform: translateY(-10px);
+}

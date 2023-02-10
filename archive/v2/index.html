@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta name="author" content="Samuel Kosasih" />
+  <meta name="description" content="Hi, I'm Sam, a Computer Science Undergraduate Student at the University of Maryland. Currently looking for Software Engineering internships. Check out my personal webpage to know more about me!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:site_name" content="Samuel Kosasih" />
+  <meta property="og:description" content="Hi, I'm Sam, a Computer Science Undergraduate Student at the University of Maryland. Currently looking for Software Engineering internships. Check out my personal webpage to know more about me!" />
+  <meta property="og:type" content="Website" />
+  <meta property="og:url" content="https://samadrn.github.io/ePortfolio/" />
+  <meta property="og:image" content="images/preview.png" />
+
+  <!-- Page Title -->
+  <title>Samuel A. Kosasih</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+  <!-- Javascript and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Lato:wght@300;700&family=Roboto+Mono&family=Solitreo&family=Work+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b079da69e8.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation Bar (Fixed Bottom) -->
+  <nav class="navbar navbar-expand-lg fixed-bottom">
+
+    <div class="container-fluid justify-content-center navbar-wrapper pt-3 pt-lg-1 pb-lg-1">
+
+      <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="w-100 justify-content-center navbar-nav align-items-center">
+          <li class="nav-item">
+            <a id="nav-1" class="nav-link btn-nav brand ms-5 my-2 ps-2 cur-page"  role="button" data-page="1">Samuel Kosasih</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-2" class="nav-link btn btn-outline-primary btn-nav mb-2 ms-lg-5"  data-page="2">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-3" class="nav-link btn btn-outline-primary btn-nav mb-2 ms-lg-5"  data-page="3">Education</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-4" class="nav-link btn btn-outline-primary btn-nav mb-2 ms-lg-5"  data-page="4">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-5" class="nav-link btn btn-outline-primary btn-nav mb-2 ms-lg-5"  data-page="5">Projects</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Socials Bar (Absolute Top) -->
+  <div class="flex-row mt-4 pt-3 fixed-top w-100 text-center d-none justify-content-center align-items-center" id="socials-bar">
+    <a class="social-icon me-5" href="https://www.linkedin.com/in/samkosasih/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a class="social-icon me-5 ms-lg-3" href="https://open.spotify.com/user/31dzjlx5ll7imlrvwoaappx4kngu?si=92ac5ea66cca471c" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+    <a class="social-icon me-5 ms-lg-3" href="https://github.com/SamAdrn" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a class="social-icon me-5 ms-lg-3" href="mailto:samadrianko@gmail.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="fst-code" data-bs-title="samadrianko@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="Resume.pdf" target="_blank" class="btn btn-outline-primary btn-outline-green" download="Resume">View my Resume</a>
+  </div>
+
+  <!-- Content -->
+  <div class="d-flex justify-content-center vh-100 anim-fade-in-from-up" id="content">
+
+    <!-- Home Page -->
+    <div id="home-page" class="d-flex flex-column justify-content-center align-items-center mb-5 pb-5 pb-lg-0">
+      <img class="profile mb-4" src="images/profile.jpg" alt="Samuel Kosasih Profile Picture" />
+      <h1 class="title mt-5">Samuel A. Kosasih</h1>
+      <h3>an aspiring software engineer</h3>
+
+      <!-- Socials Bar (within Home Page) -->
+      <div class="flex-row mt-4">
+        <a class="social-icon me-5" href="https://www.linkedin.com/in/samkosasih/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="social-icon me-5 ms-lg-3" href="https://open.spotify.com/user/31dzjlx5ll7imlrvwoaappx4kngu?si=92ac5ea66cca471c" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        <a class="social-icon me-5 ms-lg-3" href="https://github.com/SamAdrn" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a class="social-icon ms-lg-3" href="mailto:samadrianko@gmail.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="fst-code" data-bs-title="samadrianko@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <a href="Resume.pdf" target="_blank" class="btn btn-outline-primary btn-outline-green w-100 mt-4 fs-5" download="Resume">View my Resume</a>
+      <div class="p-5 m-md-5 d-lg-none">Visit this page on a desktop for more complete information</div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="d-none justify-content-center mb-lg-3">
+
+      <div class="row px-5 py-1 mx-lg-5">
+
+        <!-- Introduction -->
+        <div class="col-lg-6" id="introduction">
+
+          <div class="d-lg-none">
+            <h1 class="mt-5 mb-3">About Me</h1>
+          </div>
+
+          An <span class="highlight">enthusiastic</span> Computer Science Student with a passion
+          for inventing software. I was born and raised in the bustling city of Jakarta, Indonesia,
+          where I have grown to develop a <span class="highlight">passion</span> for programming.
+          It was here that I saw many examples of how software can revolutionize our way of life
+          from the many significant impacts made by technology towards my community. It instigated
+          a pursuit to obtain a Bachelor's degree in the United States so that, one day,
+          I am able to make an <span class="highlight">impact of my own</span>.
+          <br><br>
+          I have always valued <span class="highlight">self-development</span> to ensure that I am capable
+          of pulling my weight when collaborating in a team. I believe that <span class="highlight">Individual Impact</span>
+          is a crucial pillar to a team's success, which is why I constantly take advantage of my free time to
+          learn something new. This website, for example, was made using the knowledge I've gained from Google
+          searching and online courses. I am confident that with <span class="highlight">determination</span>
+          and <span class="">persistence</span>, we are capable of mastering anything.
+        </div>
+
+        <!-- Skills -->
+        <div class="col-lg-6 d-flex flex-column align-items-center">
+
+          <!-- Proficient Languages -->
+          <div class="skills container-fluid justify-content-center p-4 mt-3 mt-lg-0 ms-lg-5 rounded">
+            <h4 class="mb-3">Proficient Languages</h4>
+
+            <div class="row row-cols-2 row-cols-md-1">
+
+              <div class="col pe-2 pe-md-0">
+                <div id="java" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="90%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      Java
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col ps-2 ps-md-0 mt-md-3">
+                <div id="ruby" class="skill-div rounded ">
+                  <div class="h-100 rounded-start skill-bar" data-percent="80%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      Ruby
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col pe-2 pe-md-0 mt-3">
+                <div id="ansic" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="50%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      ANSI C
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col ps-2 ps-md-0 mt-3">
+                <div id="javascript" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="85%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      Javascript
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col pe-2 pe-md-0 mt-3">
+                <div id="htmlcss" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="65%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      HTML/CSS
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col ps-2 ps-md-0 mt-3">
+                <div id="python" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="60%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      Python
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col pe-2 pe-md-0 mt-3">
+                <div id="ocaml" class="skill-div rounded d-none d-md-block">
+                  <div class="h-100 rounded-start skill-bar" data-percent="55%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      OCaml
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Other Technologies -->
+          <div class="skills container-fluid d-none d-md-block justify-content-center p-4 mt-5 mt-lg-3 ms-lg-5 rounded">
+            <h4 class="mb-3">Other Technologies</h4>
+
+            <div class="row row-cols-2">
+
+              <div class="col pe-2">
+                <div id="github" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="75%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      GitHub
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col ps-2">
+                <div id="bootstrap" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="80%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      Bootstrap
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col pe-2 mt-3">
+                <div id="mongodb" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="60%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      MongoDB
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col ps-2 mt-3">
+                <div id="nodejs" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="75%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      Node.js
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col pe-2 mt-3">
+                <div id="jquery" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="80%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      jQuery
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col ps-2 mt-3">
+                <div id="unix" class="skill-div rounded">
+                  <div class="h-100 rounded-start skill-bar" data-percent="65%">
+                    <div class="h-100 rounded-start skill-label d-flex align-items-center justify-content-center">
+                      UNIX
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Education Page -->
+    <div id="education" class="d-none justify-content-center align-items-center">
+
+      <div class="row px-5 py-1 mx-lg-5">
+
+        <!-- Select School Options -->
+        <div class="col-lg-5 h-100" id="edu-options">
+
+          <div class="d-lg-none">
+            <h1 class="mt-5 mb-5">My Education</h1>
+          </div>
+
+          <!-- UMD Option Card -->
+          <div class="card mb-4 main-card hover-card edu-card active" data-edu="umd">
+            <div class="card-header">
+              Currently Attending
+            </div>
+            <div class="row g-0">
+
+              <div class="col-3 p-2 d-flex align-items-center edu-img rounded-start">
+                <img src="images/icons/umd.png" class="img-fluid p-2" alt="...">
+              </div>
+
+              <div class="col-8">
+                <div class="ps-4 card-body">
+                  <h5 class="card-title">University of Maryland</h5>
+                  <p class="card-subtitle text-muted fs-6 mb-2">College Park, MD</p>
+                  <p class="card-text">B.S in Computer Science</p>
+                  <p class="card-subtitle text-muted fs-6">August 2021 - May 2024</p>
+
+                  <div id="umd-indicator" class="edu-indicator d-none d-lg-block">
+                    <i class="fa-regular fa-circle-right"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- EDC Select Card -->
+          <div class="card mb-4 main-card hover-card edu-card" data-edu="edc">
+            <div class="row g-0">
+              <div class="col-3 p-2 d-flex align-items-center edu-img rounded-start">
+                <img src="images/icons/edc.png" class="img-fluid p-2" alt="...">
+              </div>
+              <div class="col-9">
+                <div class="ps-4 card-body">
+                  <h5 class="card-title">Edmonds College</h5>
+                  <p class="card-subtitle text-muted fs-6 mb-2">Lynnwood, WA</p>
+                  <p class="card-text">A.S in Computer Science<br> & High School Diploma</p>
+                  <p class="card-subtitle text-muted fs-6">September 2019 - June 2021</p>
+                </div>
+
+                <div id="edc-indicator" class="edu-indicator d-none">
+                  <i class="fa-regular fa-circle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- High School Select Card -->
+          <div class="card main-card hover-card edu-card" data-edu="hs">
+            <div class="row g-0">
+              <div class="col-3 p-2 d-flex align-items-center edu-img rounded-start">
+                <img src="images/icons/hs.png" class="img-fluid p-2" alt="...">
+              </div>
+              <div class="col-9">
+                <div class="ps-4 card-body">
+                  <h5 class="card-title">Mahatma Gading Intercultural School</h5>
+                  <p class="card-subtitle text-muted fs-6 mb-2">Jakarta, Indonesia</p>
+                  <p class="card-text">Grades 1 - 10</p>
+
+                  <div id="hs-indicator" class="edu-indicator d-none">
+                    <i class="fa-regular fa-circle-right"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- School Cards -->
+        <div class="col-lg-7 d-none d-lg-block">
+
+          <!-- UMD Card -->
+          <div id="umd" class="card h-100 main-card no-hover">
+
+            <div class="card-header">
+              Currently Attending
+            </div>
+
+            <div class="card-body">
+
+              <!-- UMD Header -->
+              <div class="row px-4">
+
+                <!-- UMD Icon -->
+                <div class="col-2 p-2 me-4 d-flex align-items-center edu-img rounded">
+                  <img src="images/icons/umd.png" class="img-fluid p-2" alt="...">
+                </div>
+
+                <!-- UMD Headline -->
+                <div class="col-9 p-2">
+                  <h1 class="card-title mb-3 fw-bold">University of Maryland</h1>
+                  <h5 class="card-subtitle mb-4">Bachelor's of Science in Computer Science</h5>
+                  <h6 class="card-subtitle text-muted fst-italic">August 2021 &mdash; May 2024 (Semester)</h6>
+                </div>
+
+              </div>
+
+              <!-- UMD CS Button -->
+              <div class="row d-flex justify-content-center m-3">
+                <a href="https://www.cs.umd.edu/" target="_blank" class="mt-2 btn btn-outline-primary btn-outline-green">
+                  Visit UMD CS &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <!-- UMD Relevant Courses -->
+              <div class="row d-flex justify-content-center m-3 rounded">
+
+                <div class="col-3">
+                  <div id="umd-courses" class="d-flex flex-column">
+                    <a href="#umdfa22" class="p-1 m-1 link-secondary sem-link">Fall 2022</a>
+                    <a href="#umdsu22" class="p-1 m-1 link-secondary sem-link">Summer 2022</a>
+                    <a href="#umdsp22" class="p-1 m-1 link-secondary sem-link">Spring 2022</a>
+                    <a href="#umdfa21" class="p-1 m-1 link-secondary sem-link">Fall 2021</a>
+                  </div>
+                </div>
+
+                <div class="col-9">
+                  <div class="card overflow-auto edu-courses" data-bs-spy="scroll" data-bs-target="#umd-courses" data-bs-smooth-scroll="true">
+                    <ul class="list-group list-group-flush">
+                      <li id="umdfa22" class="list-group-item fw-bold">Fall 2022</li>
+                      <li class="list-group-item ps-4">CMSC 351 &mdash; Algorithms</li>
+                      <li class="list-group-item ps-4">CMSC 335 &mdash; Web Application Development w/ Javascript</li>
+
+                      <li id="umdsu22" class="list-group-item fw-bold mt-4">Summer 2022</li>
+                      <li class="list-group-item ps-4">CMSC 330 &mdash; Organization of Programming Languages</li>
+
+                      <li id="umdsp22" class="list-group-item fw-bold mt-4">Spring 2022</li>
+                      <li class="list-group-item ps-4">CMSC 216 &mdash; Introduction to Computer Systems</li>
+                      <li class="list-group-item ps-4">CMSC 250 &mdash; Discrete Structures (Discrete Math)</li>
+
+                      <li id="umdfa21" class="list-group-item fw-bold mt-4">Fall 2021</li>
+                      <li class="list-group-item ps-4">CMSC 132 &mdash; Object-Oriented Programming II</li>
+                      <li class="list-group-item ps-4">STAT 400 &mdash; Applied Probability & Statistics I</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- EDC Card -->
+          <div id="edc" class="d-none card h-100 main-card no-hover">
+
+            <div class="card-body pt-4">
+
+              <!-- EDC Header -->
+              <div class="row px-4">
+
+                <!-- EDC Icon -->
+                <div class="col-2 p-2 me-4 d-flex align-items-center edu-img rounded">
+                  <img src="images/icons/edc.png" class="img-fluid p-2" alt="...">
+                </div>
+
+                <!-- EDC Headline -->
+                <div class="col-9 p-2">
+                  <h1 class="card-title mb-3 fw-bold">Edmonds College</h1>
+                  <h5 class="card-subtitle mb-4">Associates's of Science in Computer Science <br> & High School Diploma</h5>
+                  <h6 class="card-subtitle text-muted fst-italic">September 2019 &mdash; June 2021 (Quarterly)</h6>
+                </div>
+
+              </div>
+
+              <!-- EDC CS Button -->
+              <div class="row d-flex justify-content-center m-3">
+                <a href="https://www.edmonds.edu/programs-and-degrees/areas-of-study/information-technology/computer-science/" target="_blank" class="mt-2 btn btn-outline-primary btn-outline-green">
+                  Visit EDC CS &nbsp;&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <!-- EDC Relevant Courses -->
+              <div class="row d-flex justify-content-center m-3 rounded">
+
+                <div class="col-3">
+                  <div id="edc-courses" class="d-flex flex-column">
+                    <a href="#edcsp21" class="m-1 link-secondary sem-link">Spring 2021</a>
+                    <a href="#edcwi21" class="m-1 link-secondary sem-link">Winter 2021</a>
+                    <a href="#edcfa20" class="m-1 link-secondary sem-link">Fall 2020</a>
+                    <a href="#edcsu20" class="m-1 link-secondary sem-link">Summer 2020</a>
+                    <a href="#edcsp20" class="m-1 link-secondary sem-link">Spring 2020</a>
+                    <a href="#edcwi20" class="m-1 link-secondary sem-link">Winter 2020</a>
+                    <a href="#edcfa19" class="m-1 link-secondary sem-link">Fall 2019</a>
+                  </div>
+                </div>
+
+                <div class="col-9">
+                  <div class="card overflow-auto edu-courses" data-bs-spy="scroll" data-bs-target="#edc-courses" data-bs-smooth-scroll="true">
+                    <ul class="list-group list-group-flush">
+                      <li id="edcsp21" class="list-group-item fw-bold">Spring 2021</li>
+                      <li class="list-group-item ps-4">CS 143 &mdash; Computer Science III Java</li>
+                      <li class="list-group-item ps-4">MATH 272 &mdash; Linear Algebra</li>
+                      <li class="list-group-item ps-4">PHYS 223 &mdash; Engineering Physics III w/ Lab</li>
+
+                      <li id="edcwi21" class="list-group-item fw-bold mt-4">Winter 2021</li>
+                      <li class="list-group-item ps-4">CS 142 &mdash; Computer Science II Java</li>
+
+                      <li id="edcfa20" class="list-group-item fw-bold mt-4">Fall 2020</li>
+                      <li class="list-group-item ps-4">MATH 153 &mdash; Calculus III</li>
+                      <li class="list-group-item ps-4">PHYS 222 &mdash; Engineering Physics II w/ Lab</li>
+
+                      <li id="edcsu20" class="list-group-item fw-bold mt-4">Summer 2020</li>
+                      <li class="list-group-item ps-4">MATH 152 &mdash; Calculus II</li>
+                      <li class="list-group-item ps-4">PHYS 221 &mdash; Engineering Physics I w/ Lab</li>
+
+                      <li id="edcsp20" class="list-group-item fw-bold mt-4">Spring 2020</li>
+                      <li class="list-group-item ps-4">MATH 151 &mdash; Calculus I</li>
+
+                      <li id="edcwi20" class="list-group-item fw-bold mt-4">Winter 2020</li>
+                      <li class="list-group-item ps-4">CS 141 &mdash; Computer Science I Java</li>
+
+                      <li id="edcfa19" class="list-group-item fw-bold mt-4">Fall 2019</li>
+                      <li class="list-group-item ps-4">CS 115 &mdash; Introduction to Programming w/ VB.Net</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- HS Card -->
+          <div id="hs" class="d-none card h-100 main-card no-hover">
+
+            <div class="card-body pt-4">
+
+              <!-- HS Header -->
+              <div class="row px-4">
+
+                <!-- HS Icon -->
+                <div class="col-2 p-2 me-4 d-flex align-items-center edu-img rounded">
+                  <img src="images/icons/hs.png" class="img-fluid p-2" alt="...">
+                </div>
+
+                <!-- HS Headline -->
+                <div class="col-9 p-2">
+                  <h1 class="card-title mb-3 fw-bold">Mahatma Gading Intercultural School</h1>
+                  <h5 class="card-subtitle mb-4">Cambridge O Level Curriculum</h5>
+                  <h6 class="card-subtitle text-muted fst-italic">Grades 1 &mdash; 10</h6>
+                </div>
+
+                <ul class="list-group list-group-flush mt-5">
+                  <li class="list-group-item"><span class="highlight">School Prefect</span> &mdash; Maintain discipline for the entire Junior High School batch</li>
+                  <li class="list-group-item"><span class="highlight">Vice-Captain</span> of The Water Club</li>
+                  <li class="list-group-item">Won the <span class="highlight">Most Diligent Student Award</span> upon graduation</li>
+                  <li class="list-group-item">Ranked <span class="highlight">Top-5</span> amongst 60 students within the Class of 2019</li>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Experience Page -->
+    <div id="experience" class="d-none justify-content-center align-items-center p-5 p-lg-0">
+      <div class="row row-cols-1 row-cols-lg-auto">
+
+        <div class="col d-none d-md-flex p-4">
+          <!-- Experience Volunteer Card -->
+          <div class="card main-card no-hover exp-card p-2">
+            <div class="card-body">
+              <!-- Experience Volunteer Title -->
+              <div class="exp-title pt-2 mb-3 rounded d-flex justify-content-center align-items-center">
+                <h4 class="">Volunteer Experiences</h4>
+              </div>
+
+              <!-- Experience Volunteer 1 Description -->
+              <div class="mt-4">
+                <h5 class="card-title">Sponsorship Officer @ <span class="highlight">PERMIAS Seattle</span></h5>
+                <h6 class="card-subtitle mt-2 text-muted">February 2021 &mdash; July 2021</h6>
+                <h6 class="card-subtitle mt-2 fst-italic text-muted">Seattle, WA</h6>
+                <ul class="mt-2">
+                  <li>
+                    Secure relationships with other organizations of various industries to endorse community events for the residents of Washington state.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Experience Volunteer 2 Description -->
+              <div class="mt-5">
+                <h5 class="card-title">Head of Logistics @ <span class="highlight">Edmonds Indonesian Club</span></h5>
+                <h6 class="card-subtitle mt-2 text-muted">September 2020 &mdash; July 2021</h6>
+                <h6 class="card-subtitle mt-2 fst-italic text-muted">Edmonds, WA</h6>
+                <ul class="mt-2">
+                  <li>
+                    Control and manage supplies for organizational events that take place within the college for students.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-lg-flex p-4">
+          <!-- Experience 1 Card -->
+          <div class="card main-card no-hover exp-card p-2">
+            <div class="card-body">
+              <!-- Experience 1 Title -->
+              <div class="exp-title pt-3 pb-2 mb-3 rounded d-flex justify-content-center align-items-center">
+                <h4 class="">Assistant Lead @ <br class="d-md-none"><span class="highlight">UMD Terrapin Tech</span></h4>
+              </div>
+
+              <!-- Experience 1 Description -->
+              <div class="mt-3">
+                <h6 class="card-subtitle mt-2 text-muted">November 2021 &mdash; June 2022</h6>
+                <h6 class="card-subtitle mt-2 fst-italic text-muted">College Park, MD</h6>
+                <ul class="mt-2">
+                  <li>
+                    Assist students, teachers, and faculty members at the University of Maryland in troubleshooting various software issues and walk through the solutions to solve their problems and concerns.
+                  </li>
+                  <li>
+                    Maintained and collaborated on a seamless flow of communication between co-workers through ServiceNow to uphold our sterling customer services.
+                  </li>
+                  <li>
+                    Processed numerous special orders requested by various university departments and account for new and existing inventory through diligence and attention to detail.
+                  </li>
+                  <li>
+                    Guide new hires and team members with various procedures and assist them with issues related to work.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-75">
+        <a href="mailto:samadrianko@gmail.com" target="_blank" class="btn btn-outline-primary btn-outline-green w-100 fs-5" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="fst-code" data-bs-title="samadrianko@gmail.com">
+          Want your company to be featured here? Contact me 😀 <i class="ms-1 fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projects Page -->
+    <div id="projects" class="d-none justify-content-center align-items-center">
+
+      <div class="d-lg-none mb-3">
+        <h1>My Projects</h1>
+      </div>
+
+      <div id="proj-options" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 px-5">
+
+        <!-- Project #1 Option Card -->
+        <div class="col p-3">
+          <div class="card main-card hover-card proj-card p-2" data-bs-toggle="modal" data-bs-target="#proj1Modal">
+            <div class="card-body">
+              <h3 class="card-title mb-2">Revamped Testudo</h3>
+              <h6 class="card-subtitle mb-3 text-muted fst-italic">December 2022 &nbsp;&mdash;&nbsp; Personal Project</h6>
+              <div class="mb-3 d-flex justify-content-between">
+                <img class="proj-sel-skill-logo" src="images/icons/html.png" alt="HTML Logo" data-bs-toggle="tooltip" data-bs-title="HTML">
+                <img class="proj-sel-skill-logo" src="images/icons/css.png" alt="CSS Logo" data-bs-toggle="tooltip" data-bs-title="CSS">
+                <img class="proj-sel-skill-logo" src="images/icons/nodejs.png" alt="Node.js Logo" data-bs-toggle="tooltip" data-bs-title="Node.js">
+                <img class="proj-sel-skill-logo" src="images/icons/bootstrap.png" alt="Bootstrap Logo" data-bs-toggle="tooltip" data-bs-title="Bootstrap">
+                <img class="proj-sel-skill-logo" src="images/icons/mongodb.png" alt="MongoDB Logo" data-bs-toggle="tooltip" data-bs-title="MongoDB">
+              </div>
+              <a  class="card-link link-secondary">Click to learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #1 Modal -->
+        <div class="modal fade" id="proj1Modal" tabindex="-1" aria-labelledby="proj1ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+
+                <!-- Project Close Button -->
+                <button type="button" class="btn btn-outline-danger position-absolute top-0 end-0 m-3 p-1 px-2 align-middle border-0" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+
+                <!-- Project Header -->
+                <div class="row d-flex align-items-center">
+                  <!-- Project Name -->
+                  <div class="col-6 col-lg-7">
+                    <h1><span class="highlight">Revamped Testudo</span><span class="d-none d-lg-inline ms-4 badge bg-secondary">WIP</span></h1>
+                    <h6 class="text-muted fst-italic mt-3">#webdevelopment #webserver #api #database</h6>
+                  </div>
+
+                  <!-- Project Details Bar -->
+                  <div class="col-6 col-lg-5 p-lg-4 d-flex flex-column justify-content-center text-center">
+
+                    <!-- Project Characteristics -->
+                    <ul class="list-group list-group-horizontal w-100 mb-3 proj-chars">
+                      <li class="list-group-item text-center w-50">Personal</li>
+                      <li class="list-group-item text-center w-50">Dec<span class="d-none d-lg-inline">ember</span> <span class="d-none d-md-inline">20</span>22</li>
+                    </ul>
+
+                    <!-- Project External Resources -->
+                    <div class="btn-group w-100" role="group" aria-label="External Resources">
+                      <a href="https://github.com/SamAdrn/Testudo-Revamp" target="_blank" class="mt-2 btn btn-outline-primary btn-outline-green">
+                        GitHub<span class="d-none d-md-inline"> <i class="fa-brands fa-github"></i></span>
+                      </a>
+                      <a href="https://testudo2-0.onrender.com/" target="_blank" class="mt-2 btn btn-outline-primary btn-outline-green">
+                        Website<span class="d-none d-md-inline"> <i class="fa-solid fa-globe"></i></span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Project Description -->
+                <div class="row d-flex align-items-center proj-desc rounded m-2 p-3">
+                  Revamped Testudo visualizes a newly-designed class schedule system servicing students of
+                  the University of Maryland. Its mission is to enhance the experiences that students go
+                  through when looking/registering for classes. It runs on an Express server hosted on
+                  Render.com. Pages were built with HTML and EJS, designed using Bootstrap mixed with some
+                  custom CSS, and powered by Javascript with support of the jQuery library.
+                </div>
+
+                <!-- Project Preview -->
+                <div class="row p-3 m-lg-2 mt-lg-4">
+
+                  <!-- Project Technologies Table -->
+                  <div class="col-5 d-none d-lg-flex">
+                    <table class="w-100 table table-hover text-center mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="logos">
+                            <img class="proj-skill-logo" src="images/icons/html.png" alt="HTML Logo" data-bs-toggle="tooltip" data-bs-title="HTML">
+                          </td>
+                          <td>EJS, DOM Elements</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <img class="proj-skill-logo me-2" src="images/icons/css.png" alt="HTML Logo" data-bs-toggle="tooltip" data-bs-title="CSS">
+                            <img class="proj-skill-logo" src="images/icons/bootstrap.png" alt="HTML Logo" data-bs-toggle="tooltip" data-bs-title="Bootstrap">
+                          </td>
+                          <td>Design, Responsiveness</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <img class="proj-skill-logo me-2" src="images/icons/javascript.png" alt="HTML Logo" data-bs-toggle="tooltip" data-bs-title="JavaScript">
+                            <img class="proj-skill-logo" src="images/icons/nodejs.png" alt="HTML Logo" data-bs-toggle="tooltip" data-bs-title="Node.js">
+                          </td>
+                          <td>Application Logic, HTTP Requests, Fetch API</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <img class="proj-skill-logo" src="images/icons/mongodb.png" alt="MongoDB Logo" data-bs-toggle="tooltip" data-bs-title="MongoDB">
+                          </td>
+                          <td>Database</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Project Preview Carousel -->
+                  <div class="col col-lg-7">
+                    <div id="project1Carousel" class="carousel carousel-dark slide">
+
+                      <!-- Lower Indicators -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#project1Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#project1Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#project1Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#project1Carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      </div>
+
+                      <!-- Main Content -->
+                      <div class="carousel-inner rounded-4" style="background-color: whitesmoke;">
+                        <div class="carousel-item active">
+                          <img src="images/revTestudo/1.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/revTestudo/2.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/revTestudo/3.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/revTestudo/4.gif" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Side Controls -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-arrow-left carousel-icon"></i>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-arrow-right carousel-icon"></i>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #2 Option Card -->
+        <div class="col p-3">
+          <div class="card main-card hover-card proj-card p-2" data-bs-toggle="modal" data-bs-target="#proj2Modal">
+            <div class="card-body">
+              <h3 class="card-title mb-2">Maze</h3>
+              <h6 class="card-subtitle mb-3 text-muted fst-italic">July 2022 &nbsp;&mdash;&nbsp; Personal Project</h6>
+              <div class="mb-3 d-flex justify-content-between">
+                <img class="proj-sel-skill-logo" src="images/icons/ruby.png" alt="Ruby Logo" data-bs-toggle="tooltip" data-bs-title="Ruby">
+              </div>
+              <a  class="card-link link-secondary">Click to learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #2 Modal -->
+        <div class="modal fade" id="proj2Modal" tabindex="-1" aria-labelledby="proj2ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+
+                <!-- Project Close Button -->
+                <button type="button" class="btn btn-outline-danger position-absolute top-0 end-0 m-3 p-1 px-2 align-middle border-0" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+
+                <!-- Project Header -->
+                <div class="row d-flex align-items-center">
+                  <!-- Project Name -->
+                  <div class="col-6 col-lg-7">
+                    <h1><span class="highlight">Maze</span></h1>
+                    <h6 class="text-muted fst-italic mt-3">#graphs #graphtraversal #commandline #minigame</h6>
+                  </div>
+
+                  <!-- Project Details Bar -->
+                  <div class="col-6 col-lg-5 p-lg-4 d-flex flex-column justify-content-center text-center">
+
+                    <!-- Project Characteristics -->
+                    <ul class="list-group list-group-horizontal w-100 mb-3 proj-chars">
+                      <li class="list-group-item text-center w-50">Personal</li>
+                      <li class="list-group-item text-center w-50">July<span class="d-none d-lg-inline"></span> <span class="d-none d-md-inline">20</span>22</li>
+                    </ul>
+
+                    <!-- Project External Resources -->
+                    <div class="btn-group w-100" role="group" aria-label="External Resources">
+                      <a href="https://github.com/SamAdrn/Maze" target="_blank" class="mt-2 btn btn-outline-primary btn-outline-green">
+                        GitHub<span class="d-none d-md-inline"> <i class="fa-brands fa-github"></i></span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Project Description -->
+                <div class="row d-flex align-items-center proj-desc rounded mx-2 my-4 m-lg-2 p-3">
+                  Maze is a little mini-game that runs within the command line. Powered by Ruby,
+                  it creates mazes of random textures of any sizes using randomized versions of
+                  graph traversal algorithms. For example, when using Randomized Depth-First Search,
+                  mazes will consist of long corridors due to its nature of traversing as deep as
+                  possible. On the other hand, using Randomized Kruskal's algorithm will create more
+                  unique paths as the algorithms always generate a random spanning tree.
+                </div>
+
+                <!-- Project Preview -->
+                <div class="row p-3 m-lg-2 mt-lg-4">
+
+                  <!-- Project Technologies Table -->
+                  <div class="col-5 d-none d-lg-flex">
+                    <table class="w-100 table table-hover text-center mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="logos">
+                            <img class="proj-skill-logo" src="images/icons/ruby.png" alt="Ruby Logo" data-bs-toggle="tooltip" data-bs-title="Ruby">
+                          </td>
+                          <td>Game Logic, Command Line Control, Documentation (using YARD)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Project Preview Carousel -->
+                  <div class="col col-lg-7">
+                    <div id="proj2Carousel" class="carousel slide">
+
+                      <!-- Lower Indicators -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#proj2Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#proj2Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#proj2Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+
+                      <!-- Main Content -->
+                      <div class="carousel-inner rounded-4" style="background-color: #202020;">
+                        <div class="carousel-item active">
+                          <img src="images/maze/1.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/maze/2.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/maze/3.gif" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Side Controls -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#proj2Carousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-arrow-left carousel-icon-light"></i>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#proj2Carousel" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-arrow-right carousel-icon-light"></i>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #3 Option Card -->
+        <div class="col p-3">
+          <div class="card main-card hover-card proj-card p-2" data-bs-toggle="modal" data-bs-target="#proj3Modal">
+            <div class="card-body">
+              <h3 class="card-title mb-2">MicroCaml</h3>
+              <h6 class="card-subtitle mb-3 text-muted fst-italic">June 2022 &nbsp;&mdash;&nbsp; Academic Coursework</h6>
+              <div class="mb-3 d-flex justify-content-between">
+                <img class="proj-sel-skill-logo" src="images/icons/ocaml.png" alt="OCaml Logo" data-bs-toggle="tooltip" data-bs-title="OCaml">
+              </div>
+              <a  class="card-link link-secondary">Click to learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #3 Modal -->
+        <div class="modal fade" id="proj3Modal" tabindex="-1" aria-labelledby="proj3ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+
+                <!-- Project Close Button -->
+                <button type="button" class="btn btn-outline-danger position-absolute top-0 end-0 m-3 p-1 px-2 align-middle border-0" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+
+                <!-- Project Header -->
+                <div class="row d-flex align-items-center">
+                  <!-- Project Name -->
+                  <div class="col-6 col-lg-7">
+                    <h1><span class="highlight">MicroCaml</span></h1>
+                    <h6 class="text-muted fst-italic mt-3">#lexer #parser #evaluator #CFGs #functionalprog</h6>
+                  </div>
+
+                  <!-- Project Details Bar -->
+                  <div class="col-6 col-lg-5 p-lg-4 d-flex flex-column justify-content-center text-center">
+
+                    <!-- Project Characteristics -->
+                    <ul class="list-group list-group-horizontal w-100 mb-3 proj-chars">
+                      <li class="list-group-item text-center w-50">Academic</li>
+                      <li class="list-group-item text-center w-50">June<span class="d-none d-lg-inline"></span> <span class="d-none d-md-inline">20</span>22</li>
+                    </ul>
+
+                    <!-- Project External Resources -->
+                    <div class="btn-group w-100" role="group" aria-label="External Resources">
+                      <a class="mt-2 btn btn-outline-secondary disabled">
+                        No Resources Available
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Project Description -->
+                <div class="row d-flex align-items-center proj-desc rounded mx-2 my-4 m-lg-2 p-3">
+                  MicroCaml was an academic project focusing on the study of Context-Free Grammars
+                  and code compilation. It is intended to be a "mini" version of OCaml itself, having
+                  the same syntax albeit less functionalities. To implement this, MicroCaml code has
+                  to be tokenized into a series of tokens, which the parser can use to generate an
+                  Abstract Syntax Tree for evaluation. Any logical or syntax errors will be caught in
+                  this final step. It was a fun little project that helped introduced the concept of
+                  functional programming. (Due to potential risk of academic violation, the source code will
+                  not be publicly shared)
+                </div>
+
+                <!-- Project Preview -->
+                <div class="row p-3 m-lg-2 mt-lg-4">
+
+                  <!-- Project Technologies Table -->
+                  <div class="col-5 d-none d-lg-flex">
+                    <table class="w-100 table table-hover text-center mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="logos">
+                            <img class="proj-skill-logo" src="images/icons/ocaml.png" alt="OCaml Logo" data-bs-toggle="tooltip" data-bs-title="OCaml">
+                          </td>
+                          <td>Lexer, Parser, and Evaluator Implementation</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Project Preview Carousel -->
+                  <div class="col col-lg-7">
+                    <div id="proj3Carousel" class="carousel slide">
+
+                      <!-- Lower Indicators -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#proj3Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#proj3Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#proj3Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+
+                      <!-- Main Content -->
+                      <div class="carousel-inner rounded-4" style="background-color: #202020;">
+                        <div class="carousel-item active">
+                          <img src="images/microcaml/1.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/microcaml/2.gif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/microcaml/3.gif" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Side Controls -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#proj3Carousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-arrow-left carousel-icon-light"></i>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#proj3Carousel" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-arrow-right carousel-icon-light"></i>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #4 Option Card -->
+        <div class="col p-3 d-none d-md-block">
+          <div class="card main-card hover-card proj-card p-2" data-bs-toggle="modal" data-bs-target="#proj4Modal">
+            <div class="card-body">
+              <h3 class="card-title mb-2">Caraoke</h3>
+              <h6 class="card-subtitle mb-3 text-muted fst-italic">April 2022 &nbsp;&mdash;&nbsp; Hackathon</h6>
+              <div class="mb-3 d-flex justify-content-between w-50">
+                <img class="proj-sel-skill-logo" src="images/icons/python.png" alt="Python Logo" data-bs-toggle="tooltip" data-bs-title="Python">
+                <img class="proj-sel-skill-logo" src="images/icons/arduino.png" alt="Arduino Logo" data-bs-toggle="tooltip" data-bs-title="Arduino">
+                <img class="proj-sel-skill-logo" src="images/icons/c++.png" alt="C++ Logo" data-bs-toggle="tooltip" data-bs-title="C++">
+              </div>
+              <a  class="card-link link-secondary">Click to learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #4 Modal -->
+        <div class="modal fade" id="proj4Modal" tabindex="-1" aria-labelledby="proj4ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+
+                <!-- Project Close Button -->
+                <button type="button" class="btn btn-outline-danger position-absolute top-0 end-0 m-3 p-1 px-2 align-middle border-0" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+
+                <!-- Project Header -->
+                <div class="row d-flex align-items-center">
+                  <!-- Project Name -->
+                  <div class="col-6 col-lg-7">
+                    <h1><span class="highlight">Caraoke</span></h1>
+                    <h6 class="text-muted fst-italic mt-3">#lyrics #api #arduino #hardware #hackathon</h6>
+                  </div>
+
+                  <!-- Project Details Bar -->
+                  <div class="col-6 col-lg-5 p-lg-4 d-flex flex-column justify-content-center text-center">
+
+                    <!-- Project Characteristics -->
+                    <ul class="list-group list-group-horizontal w-100 mb-3 proj-chars">
+                      <li class="list-group-item text-center w-50">Hackathon</li>
+                      <li class="list-group-item text-center w-50">Apr<span class="d-none d-lg-inline">il</span> <span class="d-none d-md-inline">20</span>22</li>
+                    </ul>
+
+                    <!-- Project External Resources -->
+                    <div class="btn-group w-100" role="group" aria-label="External Resources">
+                      <a href="https://github.com/SamAdrn/Caraoke" target="_blank" class="mt-2 btn btn-outline-primary btn-outline-green">
+                        GitHub<span class="d-none d-md-inline"> <i class="fa-brands fa-github"></i></span>
+                      </a>
+                      <a href="https://youtu.be/foeOzic5nsU" target="_blank" class="mt-2 d-none d-lg-block btn btn-outline-primary btn-outline-green">
+                        YouTube<span class="d-none d-md-inline"> <i class="fa-brands fa-youtube"></i></span>
+                      </a>
+                      <a href="https://devpost.com/software/caraoke-lyrics-on-the-go?ref_content=user-portfolio&ref_feature=in_progress" target="_blank" class="mt-2 btn btn-outline-primary btn-outline-green">
+                        DevPost<span class="d-none d-md-inline"> <i class="fa-solid fa-globe"></i></span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Project Description -->
+                <div class="row d-flex align-items-center proj-desc rounded mx-2 my-4 m-lg-2 p-3">
+                  Caraoke is a submission to the Bitcamp 2022 Hackathon hosted at the University of Maryland.
+                  The vision of this project is to provide a portable lyrics display machine to fit within the
+                  A/C vents of a vehicle. The lyrics would sync with whatever song is playing on your mobile
+                  device, making singing along with friends and family on long trips even more fun. For this
+                  project, we implemented a connection with Spotify's Developer API, grabbed the lyrics from
+                  Textyl.co API, and sent it over to our Arduino Genuino 101 board that handles the text
+                  being displayed on the LCD Screen. It was a great team-building and collaboration experience.
+                </div>
+
+                <!-- Project Preview -->
+                <div class="row p-3 m-lg-2 mt-lg-4">
+
+                  <!-- Project Technologies Table -->
+                  <div class="col-5 d-none d-lg-flex">
+                    <table class="w-100 table table-hover text-center mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="logos">
+                            <img class="proj-skill-logo" src="images/icons/python.png" alt="Python Logo" data-bs-toggle="tooltip" data-bs-title="Python">
+                          </td>
+                          <td>Handling the API, Data Processing</td>
+                        </tr>
+                        <tr>
+                          <td class="logos">
+                            <img class="proj-skill-logo" src="images/icons/arduino.png" alt="Arduino Logo" data-bs-toggle="tooltip" data-bs-title="Arduino">
+                          </td>
+                          <td>Microcontroller, Circuit Board, LCD Screen</td>
+                        </tr>
+                        <tr>
+                          <td class="logos">
+                            <img class="proj-skill-logo" src="images/icons/c++.png" alt="C++ Logo" data-bs-toggle="tooltip" data-bs-title="C++">
+                          </td>
+                          <td>Programming the Arduino</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Project Preview Carousel -->
+                  <div class="col col-lg-7">
+                    <div id="proj4Carousel" class="carousel carousel-dark slide">
+
+                      <!-- Lower Indicators -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#proj4Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#proj4Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#proj4Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+
+                      <!-- Main Content -->
+                      <div class="carousel-inner rounded-4" style="background-color: whitesmoke;">
+                        <div class="carousel-item active">
+                          <img src="images/caraoke/1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/caraoke/2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/caraoke/3.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Side Controls -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#proj4Carousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-arrow-left carousel-icon"></i>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#proj4Carousel" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-arrow-right carousel-icon"></i>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #5 Option Card -->
+        <div class="col p-3 d-none d-md-block">
+          <div class="card main-card hover-card proj-card p-2" data-bs-toggle="modal" data-bs-target="#proj5Modal">
+            <div class="card-body">
+              <h3 class="card-title mb-2">Bank Application</h3>
+              <h6 class="card-subtitle mb-3 text-muted fst-italic">July 2021 &nbsp;&mdash;&nbsp; Personal Project</h6>
+              <div class="mb-3 d-flex justify-content-between">
+                <img class="proj-sel-skill-logo" src="images/icons/java.png" alt="Java Logo" data-bs-toggle="tooltip" data-bs-title="Java">
+              </div>
+              <a  class="card-link link-secondary">Click to learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project #5 Modal -->
+        <div class="modal fade" id="proj5Modal" tabindex="-1" aria-labelledby="proj5ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+
+                <!-- Project Close Button -->
+                <button type="button" class="btn btn-outline-danger position-absolute top-0 end-0 m-3 p-1 px-2 align-middle border-0" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+
+                <!-- Project Header -->
+                <div class="row d-flex align-items-center">
+                  <!-- Project Name -->
+                  <div class="col-6 col-lg-7">
+                    <h1><span class="highlight">Bank Application</span></h1>
+                    <h6 class="text-muted fst-italic mt-3">#oop #gui #manager #datastructures #crud</h6>
+                  </div>
+
+                  <!-- Project Details Bar -->
+                  <div class="col-6 col-lg-5 p-lg-4 d-flex flex-column justify-content-center text-center">
+
+                    <!-- Project Characteristics -->
+                    <ul class="list-group list-group-horizontal w-100 mb-3 proj-chars">
+                      <li class="list-group-item text-center w-50">Personal</li>
+                      <li class="list-group-item text-center w-50">July<span class="d-none d-lg-inline"></span> <span class="d-none d-md-inline">20</span>21</li>
+                    </ul>
+
+                    <!-- Project External Resources -->
+                    <div class="btn-group w-100" role="group" aria-label="External Resources">
+                      <a href="https://github.com/SamAdrn/BankApplication" target="_blank" class="mt-2 btn btn-outline-primary btn-outline-green">
+                        GitHub<span class="d-none d-md-inline"> <i class="fa-brands fa-github"></i></span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- Project Description -->
+                <div class="row d-flex align-items-center proj-desc rounded mx-2 my-4 m-lg-2 p-3">
+                  The Bank Application helps users manage a variety of banking information. From
+                  branch locations to customer accounts, users have to power to create, read, update,
+                  and delete data. It was one of the first projects I have worked on outside of
+                  academic purposes, intended to enhance my understanding on data structures, and how
+                  we can use them in a real-life application. It was first implemented to be a console
+                  app, but later developed with a GUI using JavaFX.
+                </div>
+
+                <!-- Project Preview -->
+                <div class="row p-3 m-lg-2 mt-lg-4">
+
+                  <!-- Project Technologies Table -->
+                  <div class="col-5 d-none d-lg-flex">
+                    <table class="w-100 table table-hover text-center mb-0">
+                      <tbody>
+                        <tr>
+                          <td class="logos">
+                            <img class="proj-skill-logo" src="images/icons/java.png" alt="Java Logo" data-bs-toggle="tooltip" data-bs-title="Java">
+                          </td>
+                          <td>Application Logic, GUI (Using JavaFX + FXML)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Project Preview Carousel -->
+                  <div class="col col-lg-7">
+                    <div id="proj5Carousel" class="carousel carousel-dark slide">
+
+                      <!-- Lower Indicators -->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#proj5Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#proj5Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#proj5Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+
+                      <!-- Main Content -->
+                      <div class="carousel-inner rounded-4" style="background-color: whitesmoke;">
+                        <div class="carousel-item active">
+                          <img src="images/bankApp/1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/bankApp/2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/bankApp/3.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+
+                      <!-- Side Controls -->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#proj5Carousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-circle-arrow-left carousel-icon"></i>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#proj5Carousel" data-bs-slide="next">
+                        <i class="fa-solid fa-circle-arrow-right carousel-icon"></i>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- See More Option Card -->
+        <div class="col p-3 d-md-flex flex-grow-1">
+          <div class="card main-card hover-card proj-card p-2 w-100" id="proj-see-more">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <h5 class="px-5">See more on my GitHub</h5>
+              <a href="https://github.com/SamAdrn" class="stretched-link" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
